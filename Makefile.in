@@ -72,10 +72,10 @@ distclean:
 	rm -rf hping3 *.o byteorder byteorder.h systype.h Makefile libars.a .depend
 
 install: hping3
-	cp -f hping3 /usr/sbin/
-	chmod 755 /usr/sbin/hping3
-	ln -s /usr/sbin/hping3 /usr/sbin/hping
-	ln -s /usr/sbin/hping3 /usr/sbin/hping2
+	cp -f hping3 /usr/local/sbin/
+	chmod 755 /usr/local/sbin/hping3
+	ln -s /usr/local/sbin/hping3 /usr/local/sbin/hping
+	ln -s /usr/local/sbin/hping3 /usr/local/sbin/hping2
 	@if [ -d ${INSTALL_MANPATH}/man8 ]; then \
 		cp ./docs/hping3.8 ${INSTALL_MANPATH}/man8; \
 		chmod 644 ${INSTALL_MANPATH}/man8/hping3.8; \
